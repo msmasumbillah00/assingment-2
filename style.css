@@ -1,0 +1,267 @@
+/* ------font-style from google font ------*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Bebas+Neue&family=Open+Sans:ital,wght@1,500&family=Poppins:wght@400;500&family=Roboto&family=Roboto+Condensed&display=swap');
+
+
+/*------------------- common styles---------- */
+body {
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: Poppins;
+    margin: 0 100px;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.link-button {
+    background-color: rgb(231, 0, 0);
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.link-button i {
+    margin-left: 40px;
+}
+
+/* ------------------------------baner part---------------- */
+.baner-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    border-radius: 20px;
+    padding-left: 7%;
+    margin-bottom: 100px;
+}
+
+.half-width {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baner-discrip {
+    padding-right: 50px;
+}
+
+.baner-title {
+    font-size: 4.3vw;
+}
+
+.baner-image img {
+    width: 100%;
+}
+
+/* ------------------------------main part---------------- */
+
+.main-section {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.manue-list {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 7px;
+    height: max-content;
+    width: 300px;
+}
+
+.manue-list a {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+a.focuse-link {
+    background-color: rgb(231, 0, 0);
+    color: white;
+}
+
+.players {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.player {
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.player-image {
+    height: 240px;
+}
+
+.player img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.player-discription {
+    padding: 20px;
+}
+
+.details-button {
+    padding: 5px 10px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: initial;
+}
+
+.like-sec {
+    display: flex;
+    align-items: center;
+}
+
+.like-sec i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.time,
+.like {
+    margin-right: 80px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------footer part---------------- */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0 -100px;
+}
+
+footer a,
+.baner-section a {
+    color: white;
+    margin-right: 20px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    margin-bottom: 30px;
+    background-color: rgb(116, 117, 117);
+}
+
+.social-link {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-link div {}
+
+.social-link i {
+    font-size: 4em;
+    margin: auto;
+    color: rgb(52, 55, 59);
+    height: 80px;
+    width: 80px;
+    background-color: rgb(42, 230, 255);
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ------------------------------mobile part---------------- */
+@media only screen and (max-width:668px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        margin: 20px;
+        margin-bottom: 0;
+    }
+
+    .baner-section {
+        flex-direction: column;
+    }
+
+    p {
+        height: 3em;
+        overflow: hidden;
+
+    }
+
+    .half-width {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .baner-title {
+        font-size: 6vw;
+    }
+
+    .baner-image {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+}
+
+/* ------------------------------tablate part---------------- */
+
+@media only screen and (min-width: 668px) and (max-width:992px) {
+    body {
+        margin: 40px;
+        margin-bottom: 0;
+    }
+
+    p {
+        height: 3em;
+        overflow: hidden;
+
+    }
+
+    .baner-section {
+        padding-top: 100px;
+    }
+
+    .baner-discrip {
+        padding-bottom: 100px;
+
+    }
+}
