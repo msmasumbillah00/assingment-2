@@ -1,0 +1,47 @@
+#upcoming-match {
+    background-color: rgb(231, 0, 0);
+    color: white;
+}
+
+#focuse-link {
+    background-color: white;
+    color: black;
+}
+
+.matches {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.matche {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.matche-image {
+    display: flex;
+    align-items: center;
+
+}
+
+.matche-image span {
+    margin: 0 20px;
+}
+
+@media only screen and (min-width: 668px) and (max-width:992px) {
+    .matches {
+        margin-top: 50px;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:668px) {
+    .matches {
+        grid-template-columns: auto;
+    }
+}
